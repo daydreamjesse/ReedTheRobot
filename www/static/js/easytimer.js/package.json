@@ -1,0 +1,104 @@
+{
+  "name": "easytimer.js",
+  "version": "3.1.0",
+  "description": "Timer/Chronometer/Countdown compatible with AMD and NodeJS",
+  "main": "dist/easytimer.js",
+  "types": "index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/albert-gonzalez/easytimer.js.git"
+  },
+  "directories": {
+    "test": "test",
+    "src": "src"
+  },
+  "scripts": {
+    "prestart": "npm install",
+    "start": "http-server -a 0.0.0.0 -p 8001",
+    "test": "mocha",
+    "build": "rollup -c && rollup -c --environment optimize",
+    "build-examples": "rollup -c rollup.config.examples.js"
+  },
+  "keywords": [
+    "javascript",
+    "nodejs",
+    "amd",
+    "requirejs",
+    "timer",
+    "chronometer",
+    "countdown",
+    "mocha"
+  ],
+  "author": {
+    "name": "Albert Gonzalez"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "bootstrap": "^4.3.1",
+    "chai": "^4.2.0",
+    "eslint": "^5.15.2",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "http-server": "~0.11.1",
+    "jquery": "^3.3.1",
+    "mocha": "^6.0.2",
+    "popper.js": "^1.14.7",
+    "rollup": "^1.6.0",
+    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-commonjs": "^9.2.1",
+    "rollup-plugin-css-only": "^1.0.0",
+    "rollup-plugin-license": "^0.8.1",
+    "rollup-plugin-node-resolve": "^4.0.1",
+    "rollup-plugin-uglify": "^6.0.2",
+    "sinon": "^7.2.7"
+  },
+  "babel": {
+    "presets": [
+      [
+        "@babel/env",
+        {
+          "modules": false
+        }
+      ]
+    ]
+  },
+  "gitHead": "db3ec9d3bada48ddf16470e9289f07ba8f0aba42",
+  "bugs": {
+    "url": "https://github.com/albert-gonzalez/easytimer.js/issues"
+  },
+  "homepage": "https://github.com/albert-gonzalez/easytimer.js#readme",
+  "_id": "easytimer.js@3.1.0",
+  "_npmVersion": "6.2.0",
+  "_nodeVersion": "10.12.0",
+  "_npmUser": {
+    "name": "vacilone",
+    "email": "albert.glez.mld@gmail.com"
+  },
+  "dist": {
+    "integrity": "sha512-NRvqRXw5ud8PvGThHH6eIHHG3eB5N1Ri4ehlGxMwMu7dnrbh5ZNBSUU0BXxbk4RKrcJF2ttCeQNjiqN+ou6qLQ==",
+    "shasum": "2e1dd968d5a700890a164aeb44c7dba4722daca0",
+    "tarball": "https://registry.npmjs.org/easytimer.js/-/easytimer.js-3.1.0.tgz",
+    "fileCount": 21,
+    "unpackedSize": 90799,
+    "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJcj/R3CRA9TVsSAnZWagAA0BAP/Rkzxq0J+0QoMCvQJ4jT\ncAFs4TmKi5HlWCmuaTCnHqn0QX+vQHRPcoFcBaWN9petdfahA0DklWYr/41g\niqK0BcGpNFOgcoCDG0REI6E+J1EVv86ZsEs/B3sJbn2kLQVw4XP7Yi/UpIdG\n8Apjh7kCD0nn0w+4L+7FIJ89iYFSSKa1en8GnAxYlOW2RSFyrU6130JQPHwY\nB3SZR/MCJNLed3q4k7BZEgxWdwR5EHEp8WrDyPHD5gYacIWb+sPjMLBZqjgc\nKu3ZZISW3STl4DiisO6m3BkR2419e651rC+/vhPzEqzpNH1d807RkDP1GLhx\n8IDe/V+lIYB6cW2dZGL0hqytPP6lAAWAxHJ4xXuCQrBxtxAAOBZqFm4+bICx\nfwsyoSqV7YaUt1LpMyVLr3PlMS+EE6cG491pjvED4ou3rbwqB2m6qGSkZ1aw\nadw5pMjSBz1UIwe6HMlT3eZWpVQQ7l7ICGbZ/9QSwi3H2mog5ekWa9N43bCP\nGSnKad/LJADGmSQxxv1EPbwtIp/CSuR2iIagmC2IRqNlYC9CyPbcRAgh3G1O\nry1nEFYHX36D1to+sOGgbjir4rCwkuw4N1kSVgjgNsgZc1zItVsKwtRY3yOL\nWScBCrr2XbvOM//sLuGjbJH2Br2w2TcfdG9SXpuMioHW3UAex/YV9DpSHH3d\nvv8u\r\n=uSzy\r\n-----END PGP SIGNATURE-----\r\n"
+  },
+  "maintainers": [
+    {
+      "name": "vacilone",
+      "email": "albert.glez.mld@gmail.com"
+    }
+  ],
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/easytimer.js_3.1.0_1552938102809_0.6995680515833038"
+  },
+  "_hasShrinkwrap": false,
+  "_shasum": "2e1dd968d5a700890a164aeb44c7dba4722daca0",
+  "_from": "easytimer.js@",
+  "_resolved": "https://registry.npmjs.org/easytimer.js/-/easytimer.js-3.1.0.tgz"
+}

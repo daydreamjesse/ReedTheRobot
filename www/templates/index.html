@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
+	<meta http-equiv="refresh" content={{ timeout }} />
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/styletest.css') }}"/>
+	<script type="text/javascript" src="{{ url_for('static', filename='js/easytimer.js/dist/easytimer.min.js') }}"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script>
+		var timerInstance = new easytimer.Timer();
+	</script>
+	<script>
+		var timer = new easytimer.Timer();
+		timer.start({countdown: true, startValues: {seconds: {{ timeout }} }});
+		$('#countdown .values').html(timer.getTimeValues().toString());
+		timer.addEventListener('secondsUpdated', function (e) {
+			$('#countdown .values').html(timer.getTimeValues().toString());
+		});
+		timer.addEventListener('targetAchieved', function (e) {
+			$('#countdown .values').html("NEXT");
+		});
+	</script>
+</head>
+<body>
+		<div class="marquee">
+			<p><b>{{ marquee }}</b></p>
+		</div>
+		<div id="countdown">
+			<div class="values"></div>
+		</div>
+</body>
+</html>
